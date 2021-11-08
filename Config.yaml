@@ -1,0 +1,117 @@
+data_name: "../Excel_File/ATL Chiller plant logs 2018.xlsx"
+
+plantKW_Ton_Column_Range: 0.3
+capacity_Tons_column_Range: 0
+
+# Outlier For CHW
+capacity_Percentage_MoreThan_CHW: 10
+chwst_cel_MoreThan_CHW: 7
+chwst_cel_LessThan_CHW: 10.5
+chwrt_cel_MoreThan_CHW: 11.5
+chwrt_cel_LessThan_CHW: 14.5
+outsideAirTemp_MoreThan_CHW: 20
+outsideAirTemp_LessThan_CHW: 42
+ecwt_cel_MoreThan_CHW: 22.2
+ecwt_cel_LessThan_CHW: 29.8
+lcwt_cel_MoreThan_CHW: 20
+lcwt_cel_LessThan_CHW: 36
+diff_Temp_cel_MoreThan_CHW: 16
+chwPump1SpeedPer_MoreThan: 0
+chwPump1SpeedPer_LessThan: 100
+
+# Outlier For FSP
+capacity_Percentage_MoreThan_FSP: 10
+chwst_cel_MoreThan_FSP: 7
+chwst_cel_LessThan_FSP: 10
+chwrt_cel_MoreThan_FSP: 11
+chwrt_cel_LessThan_FSP: 15
+outsideAirTemp_MoreThan_FSP: 20
+outsideAirTemp_LessThan_FSP: 40
+relative_Humidity_Per_MoreThan_FSP: 20
+chwst_SP_cel_MoreThan_FSP: 6
+chwst_SP_cel_LessThan_FSP: 9
+ecwt_cel_MoreThan_FSP: 21.5
+ecwt_cel_LessThan_FSP: 30
+lcwt_cel_MoreThan_FSP: 24
+diff_Temp_cel_MoreThan_FSP: 16
+diff_Temp_cel_LessThan_FSP: 28.5
+FSP_Per_MoreThan: 0
+FSP_Per_LessThan: 100
+
+# Outlier For PSP
+capacity_Percentage_MoreThan_PSP: 10
+chwst_cel_MoreThan_PSP: 7
+chwst_cel_LessThan_PSP: 10
+chwrt_cel_MoreThan_PSP: 11
+chwrt_cel_LessThan_PSP: 15
+outsideAirTemp_MoreThan_PSP: 20
+outsideAirTemp_LessThan_PSP: 40
+chwst_SP_cel_MoreThan_PSP: 6
+chwst_SP_cel_LessThan_PSP: 9
+ecwt_cel_MoreThan_PSP: 22.5
+ecwt_cel_LessThan_PSP: 30
+lcwt_cel_MoreThan_PSP: 25.8
+lcwt_cel_LessThan_PSP: 36
+diff_Temp_cel_MoreThan_PSP: 16.5
+diff_Temp_cel_LessThan_PSP: 28.5
+PSP_Per_MoreThan: 0
+PSP_Per_LessThan: 100
+
+# Outlier For NOC
+capacity_Percentage_MoreThan_NOC: 10
+chwst_cel_MoreThan_NOC: 7
+chwst_cel_LessThan_NOC: 10
+chwrt_cel_MoreThan_NOC: 11
+chwrt_cel_LessThan_NOc: 15
+relative_Humidity_Per_MoreThan_NOC: 20
+relative_Humidity_Per_LessThan_NOC: 42
+outsideAirTemp_MoreThan_NOC: 20
+outsideAirTemp_LessThan_NOC: 42
+chwst_SP_cel_MoreThan_NOC: 6
+chwst_SP_cel_LessThan_NOC: 9
+ecwt_cel_MoreThan_NOC: 21.5
+ecwt_cel_LessThan_NOC: 30
+lcwt_cel_MoreThan_NOC: 24
+lcwt_cel_LessThan_NOC: 37
+diff_Temp_cel_MoreThan_NOC: 16
+diff_Temp_cel_LessThan_NOC: 28.5
+
+# Remove Duplicate
+duplicate_row_from_required_column_CHW: ['Capacity (%)', 'CHWST (Celsius)', 'CHWRT (Celsius)', 'Outside Air Temp. (Celsius)', 'Relative Humidity (%)', 'CHWST SP (Celsius)', 'ECWT SP (Celsius)', 'ECWT (Celsius)',  'LCWT (Celsius)', 'Differential Temp. (Celsius)','CHW Pump 1 Speed (%)']
+duplicate_row_from_required_column_FSP: ['Capacity (%)', 'CHWST (Celsius)', 'CHWRT (Celsius)', 'Outside Air Temp. (Celsius)', 'Relative Humidity (%)', 'CHWST SP (Celsius)', 'ECWT SP (Celsius)', 'ECWT (Celsius)',  'LCWT (Celsius)', 'Differential Temp. (Celsius)', 'FSP (%)']
+duplicate_row_from_required_column_PSP: ['Capacity (%)', 'CHWST (Celsius)', 'CHWRT (Celsius)', 'Outside Air Temp. (Celsius)', 'Relative Humidity (%)', 'CHWST SP (Celsius)', 'ECWT SP (Celsius)', 'ECWT (Celsius)',  'LCWT (Celsius)', 'Differential Temp. (Celsius)', 'PSP (%)']
+duplicate_row_from_required_column_NOC: ['Capacity (%)', 'CHWST (Celsius)', 'CHWRT (Celsius)', 'Outside Air Temp. (Celsius)', 'Relative Humidity (%)', 'CHWST SP (Celsius)', 'ECWT SP (Celsius)', 'ECWT (Celsius)',  'LCWT (Celsius)', 'Differential Temp. (Celsius)', 'NOC']
+
+
+# Required Columns
+required_columns_CHW: ['Capacity (%)', 'CHWST (Celsius)', 'CHWRT (Celsius)', 'Outside Air Temp. (Celsius)', 'Relative Humidity (%)', 'CHWST SP (Celsius)', 'ECWT SP (Celsius)', 'ECWT (Celsius)',  'LCWT (Celsius)', 'Differential Temp. (Celsius)', 'CHW Pump 1 Speed (%)']
+required_columns_FSP: ['Capacity (%)', 'CHWST (Celsius)', 'CHWRT (Celsius)', 'Outside Air Temp. (Celsius)', 'Relative Humidity (%)', 'CHWST SP (Celsius)', 'ECWT SP (Celsius)', 'ECWT (Celsius)',  'LCWT (Celsius)', 'Differential Temp. (Celsius)', 'FSP (%)']
+required_columns_PSP: ['Capacity (%)', 'CHWST (Celsius)', 'CHWRT (Celsius)', 'Outside Air Temp. (Celsius)', 'Relative Humidity (%)', 'CHWST SP (Celsius)', 'ECWT SP (Celsius)', 'ECWT (Celsius)',  'LCWT (Celsius)', 'Differential Temp. (Celsius)', 'PSP (%)']
+required_columns_NOC: ['Capacity (%)', 'CHWST (Celsius)', 'CHWRT (Celsius)', 'Outside Air Temp. (Celsius)', 'Relative Humidity (%)', 'CHWST SP (Celsius)', 'ECWT SP (Celsius)', 'ECWT (Celsius)',  'LCWT (Celsius)', 'Differential Temp. (Celsius)', 'NOC']
+
+# Targeted Column
+target_name_CHW: "CHW Pump 1 Speed (%)"
+target_name_FSP: "FSP (%)"
+target_name_PSP: "PSP (%)"
+target_name_NOC: "NOC"
+
+# Test & Train Split Data
+test_size: 0.20
+random_state_train: 0
+
+# RandomForest Model
+n_estimators: 10
+oob_score: true
+random_state_model: 0
+
+# Neural network
+activation: "relu"
+solver: "adam"
+max_iter: 800
+
+# save our RF in the model directory
+model_directory: "./"
+model_name_CHW: "CHW_Pump_1_Speed(%)_MODEL.pkl"
+model_name_FSP: "FSP_MODEL.pkl"
+model_name_PSP: "PSP_MODEL.pkl"
+model_name_NOC: "NOC_MODEL.pkl"
